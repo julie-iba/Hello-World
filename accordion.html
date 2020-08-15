@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title></title>	
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="">
+
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icon-192x192.png">
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/common.css">
+
+
+<style>
+
+h3.open_h3{
+    border-bottom: 1px dotted #a9a9a9;
+    cursor: pointer;
+    margin: 0;
+}
+.open_h3:after, 
+.open_h3.active:after {
+    font-size: 22px;
+    margin-left: 20px;
+}
+.open_h3.active::after {
+    content: "▲";
+}
+.open_h3::after {
+    content: "▼";
+}
+.info{
+    font-size: 13px;
+}
+.title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.img-close,
+.img-close img{
+    width: 50px;
+    height: 50px;
+}
+.open-6.ul_open{
+    position: relative;
+}
+.open-6 li.img-close{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+    margin: auto;
+}
+.open-6 li:last-child{
+    list-style-type: none;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+
+
+    $('.open-4').each(function(){
+        $(this).css("height",$(this).height()+"px");
+    });
+    $('.open-4').hide();
+    $('.btn-4').click(function () {
+        $(this).next('.open-4').slideToggle('slow').siblings('.open-4').slideUp('slow');
+        $(this).siblings('.btn-4').removeClass('active');
+        $(this).toggleClass('active');
+    });
+
+
+
+
+    $('.img-close').click(function () {
+        $(this).parent().slideToggle();
+        $(this).parent().siblings('.btn-6').removeClass('active');
+    });
+
+
+});
+</script>
+
+</head>
+
+<body>
+
+<h2 class="title">アコーディオン</h2>
+<div class="wrap">
+<h3 class="open_h3 btn-4">タイトル</h3>
+<p class="info open-4">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+<h3 class="open_h3 btn-4">タイトル</h3>
+<p class="info open-4">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+<h3 class="open_h3 btn-4">タイトル</h3>
+<p class="info open-4">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+</div>
+
+</body>
+</html>
