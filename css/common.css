@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*----------------------------------------------------
+  #BODY
+--------------------------------------------------- */
+
+* {
+	word-wrap:break-word;
+	background-repeat:no-repeat;
+	overflow-wrap:break-word;
+}
+
+html,body {
+	height:100%; 
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0; 
+	padding:0; 
+}
+
+html {
+	scroll-behavior:smooth;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	font-weight: 400;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.75;
+	letter-spacing: 0.175em;
+	overflow-wrap: break-word;
+	word-break: normal;
+	color: #423930;
+	background: #fff;
+	text-align: center;
+}
+
+table { 
+	border-collapse:collapse;
+	border-spacing:0; 
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+
+h1, h2, h3, h4, h5 {
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+}
+
+a:hover img {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -ms-filter: "alpha(opacity=90)";
+}
+
+
+ol,ul { 
+	list-style:none;
+}
+
+.effect-fadein {
+    opacity: 0;
+    transform: translate(0, 200px);
+    transition: all 1800ms;
+}
+
+.effect-fadein.effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.result {
+    opacity: 0;
+}
+.loading {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  position: absolute;
+	margin: auto;
+  z-index: 99999;
+}
+
+
+/*----------------------------------------------------
+  #Wrap
+--------------------------------------------------- */
+
+#Wrap {
+	margin:0 auto;
+	text-align:center;
+}
+
+h1 {
+	color:#204e6d;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+h2 {
+	color:#204e6d;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+h3 {
+	color:#204e6d;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/*----------------------------------------------------
+  #header
+----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------
+  #footer
+----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------
+  tb
+----------------------------------------------------*/
+
+@media screen and (max-width:1600px) {
+
+
+}
+
+/*----------------------------------------------------
+  sp
+----------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+
+	
+}
