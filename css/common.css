@@ -30,6 +30,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 1.75;
 	letter-spacing: 0.175em;
+	font-feature-settings: "palt";
 	overflow-wrap: break-word;
 	word-break: normal;
 	color: #423930;
